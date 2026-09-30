@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Genshin Fan Website</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <div class="logo">
+        <h2>GENSHIN<span>HUB</h2>
+    </div>
+    <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="regions.html">Regions</a>
+        <a href="characters.html" class="active">Characters</a>
+        <a href="guides.html">Guides</a>
+    </nav>
+</header>
+
+<main>
+    
+    <input type="radio" name="element-filter" id="all" checked>
+    <input type="radio" name="element-filter" id="pyro">
+    <input type="radio" name="element-filter" id="hydro">
+    <input type="radio" name="element-filter" id="anemo">
+    <input type="radio" name="element-filter" id="electro">
+    <input type="radio" name="element-filter" id="cryo">
+    <input type="radio" name="element-filter" id="geo">
+    <input type="radio" name="element-filter" id="dendro">
+
+    <!-- SECTION 1 -->
+    <section class="filter-section">
+        <h1>Teyvat Playable Characters</h1>
+        <p>Filter characters by element or search for your favorite hero.</p>
+
+        <div class="filter-bar">
+            <label for="all" class="filter-btn">All</label>
+            <label for="pyro" class="filter-btn">Pyro</label>
+            <label for="hydro" class="filter-btn">Hydro</label>
+            <label for="anemo" class="filter-btn">Anemo</label>
+            <label for="electro" class="filter-btn">Electro</label>
+            <label for="cryo" class="filter-btn">Cryo</label>
+            <label for="geo" class="filter-btn">Geo</label>
+            <label for="dendro" class="filter-btn">Dendro</label>
+        </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="character-display">
+        <div class="character-grid">
+
+            <!-- Card 1 -->
+            <article class="char-card" data-element="pyro">
+                <img src="images/Arlecchino.webp.webp" alt="Arlecchino">
+                <div class="char-info">
+                    <span class="badge pyro">Pyro</span>
+                    <h3>Arlecchino</h3>
+                    <p>Rarity: 5-Star | Weapon: Polearm</p>
+                    <small>The Knave, Fourth of the Fatui Harbingers.</small>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="char-card" data-element="pyro">
+                <img src="images/Mavuika.webp.webp" alt="Mavuika">
+                <div class="char-info">
+                    <span class="badge pyro">Pyro</span>
+                    <h3>Mavuika</h3>
+                    <p>Rarity: 5-Star | Weapon: Claymore</p>
+                    <small>The Pyro Archon from the nation of Natlan.</small>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="char-card" data-element="hydro">
+                <img src="images/Furina.webp.webp" alt="Furina">
+                <div class="char-info">
+                    <span class="badge hydro">Hydro</span>
+                    <h3>Furina</h3>
+                    <p>Rarity: 5-Star | Weapon: Sword</p>
+                    <small>Soloist of Solitude, Human proxy of Focalors.</small>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="char-card" data-element="hydro">
+                <img src="images/Neuvillette.webp.webp" alt="Neuvillette">
+                <div class="char-info">
+                    <span class="badge hydro">Hydro</span>
+                    <h3>Neuvillette</h3>
+                    <p>Rarity: 5-Star | Weapon: Catalyst</p>
+                    <small>Chief Justice of Fontaine, Hydro Sovereign.</small>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="char-card" data-element="anemo">
+                <img src="images/Kazuha.webp.webp" alt="Kazuha">
+                <div class="char-info">
+                    <span class="badge anemo">Anemo</span>
+                    <h3>Kazuha</h3>
+                    <p>Rarity: 5-Star | Weapon: Sword</p>
+                    <small>Wandering samurai of the Crux Fleet.</small>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="char-card" data-element="anemo">
+                <img src="images/Ifa.webp" alt="Ifa">
+                <div class="char-info">
+                    <span class="badge anemo">Anemo</span>
+                    <h3>Ifa</h3>
+                    <p>Rarity: 4-Star | Weapon: Catalyst</p>
+                    <small>Veterinary physician from the Masters of the Night-Wind.</small>
+                </div>
+            </article>
+
+            <!-- Card 7 -->
+             <article class="char-card" data-element="electro">
+                <img src="images/Iansan.webp" alt="Iansan">
+                <div class="char-info">
+                    <span class="badge electro">Electro</span>
+                    <h3>Iansan</h3>
+                    <p>Rarity: 4-Star | Weapon: Polearm</p>
+                    <small>Fitness instructor from the Collective of Plenty.</small>
+                </div>
+            </article>
+
+            <!-- Card 8 -->
+             <article class="char-card" data-element="electro">
+                <img src="images/Raiden.webp.webp" alt="Raiden Shogun">
+                <div class="char-info">
+                    <span class="badge electro">Electro</span>
+                    <h3>Raiden Shogun</h3>
+                    <p>Rarity: 5-Star | Weapon: Polearm</p>
+                    <small>Her Eternal Excellency, the Almighty Narukami Ogosho and Electro Archon of Inazuma.</small>
+                </div>
+            </article>
+
+            <!-- Card 9 -->
+            <article class="char-card" data-element="cryo">
+                <img src="images/Kaeya.webp.webp" alt="Kaeya">
+                <div class="char-info">
+                    <span class="badge cryo">Cryo</span>
+                    <h3>Kaeya</h3>
+                    <p>Rarity: 4-Star | Weapon: Sword</p>
+                    <small>Cavalry Captain of the Knights of Favonius and trusted advisor in Mondstadt.</small>
+                </div>
+            </article>
+
+            <!-- Card 10 -->
+            <article class="char-card" data-element="cryo">
+                <img src="images/Sandrone.webp" alt="Sandrone">
+                <div class="char-info">
+                    <span class="badge cryo">Cryo</span>
+                    <h3>Sandrone</h3>
+                    <p>Rarity: 5-Star | Weapon: Claymore</p>
+                    <small>Marionette, Seventh of the Fatui Harbingers.</small>
+                </div>
+            </article>
+
+            <!-- Card 11 -->
+            <article class="char-card" data-element="geo">
+                <img src="images/Yun Jin.webp" alt="Yun Jin">
+                <div class="char-info">
+                    <span class="badge geo">Geo</span>
+                    <h3>Yun Jin</h3>
+                    <p>Rarity: 4-Star | Weapon: Polearm</p>
+                    <small>Famous opera director and playwright in Liyue.</small>
+                </div>
+            </article>
+
+            <!-- Card 12 -->
+            <article class="char-card" data-element="geo">
+                <img src="images/Zhongli.webp.webp" alt="Zhongli">
+                <div class="char-info">
+                    <span class="badge geo">Geo</span>
+                    <h3>Zhongli</h3>
+                    <p>Rarity: 5-Star | Weapon: Polearm</p>
+                    <small>Consultant of Wangsheng Funeral Parlor, Geo Archon.</small>
+                </div>
+            </article>
+
+            <!-- Card 13 -->
+            <article class="char-card" data-element="dendro">
+                <img src="images/Alhaitham.webp" alt="Alhaitham">
+                <div class="char-info">
+                    <span class="badge dendro">Dendro</span>
+                    <h3>Alhaitham</h3>
+                    <p>Rarity: 5-Star | Weapon: Sword</p>
+                    <small>Scribe of the Sumeru Academy, known for his brilliant mind and rational nature.</small>
+                </div>
+            </article>
+
+            <!-- Card 14 -->
+            <article class="char-card" data-element="dendro">
+                <img src="images/Collei.webp" alt="Collei">
+                <div class="char-info">
+                    <span class="badge dendro">Dendro</span>
+                    <h3>Collei</h3>
+                    <p>Rarity: 4-Star | Weapon: Bow</p>
+                    <small>Trainee Forest Ranger in the Avidya Forest, working under Tighnari's guidance.</small>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="elemantal-resonance">
+        <h2>Elemental Synergy Tips</h2>
+        <div class="synergy-container">
+            <div class="synergy-box">
+                <h4>Vaporize Reaction</h4>
+                <p>Combines <strong>Pyro</strong> and <strong>Hydro</strong> for multiplied damage output.</p>
+            </div>
+            <div class="synergy-box">
+                <h4>Melt Reaction</h4>
+                <p>Combines <strong>Pyro</strong> and <strong>Cryo</strong> for critical damage amplifiers.</p>
+            </div>
+            <div class="synergy-box">
+                <h4>Aggravate Reaction</h4>
+                <p>Combines <strong>Dendro</strong> and <strong>Electro</strong> for increased elemental damage.</p>
+            </div>
+            <div class="synergy-box">
+                <h4>Hyperbloom Reaction</h4>
+                <p>Combines <strong>Dendro</strong> and <strong>Hydro</strong> to create Bloom cores, then triggers <strong>Electro</strong> to fire homing Sprawling Shots.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer">
+    <p>&copy; 2026 Genshin Impact Fan Project. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
