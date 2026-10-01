@@ -276,17 +276,15 @@ input[name="element-filter"] {
 
 /*Regions*/
 .regions0 {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 35px;
+    margin-block: 40px;
+    padding: 35px 20px;
     text-align: center;
-
     background-color: #112038;
     border-radius: 12px;
 }
 
 .regions0 h1 {
-    font-size: 40px;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     margin-top: 0;
     color: #ab2f54
 }
@@ -297,9 +295,7 @@ input[name="element-filter"] {
 
 /*Regions cards*/
 .regions {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    padding-block: 20px;
 }
 
 .regions h2 {
@@ -310,17 +306,11 @@ input[name="element-filter"] {
 
 .region-grid {
     display: grid;
-    grid-template-columns: 350px 350px 350px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
 }
 
-.mondstadt-card,
-.liyue-card,
-.inazuma-card,
-.sumeru-card,
-.fontaine-card,
-.natlan-card,
-.snezhnaya-card {
+.region-card {
     min-height: 320px;
     padding: 25px;
     border-radius: 10px;
@@ -329,7 +319,7 @@ input[name="element-filter"] {
 
     background-color: rgba(0, 0, 0, 0.4); 
     background-blend-mode: overlay; 
-    color: white; 
+    color: #ffffff; 
 
     display: flex;
     flex-direction: column;
@@ -368,16 +358,18 @@ input[name="element-filter"] {
 .region-grid h3, 
 .region-grid h4, 
 .region-grid p { 
-    position: relative; z-index: 1; 
+    position: relative; 
+    z-index: 1; 
 } 
 .region-grid h3 { 
     font-size: 26px; 
+    margin-block: 10px;
 }
+
 /*Regions timeline&faq*/
 .timeline,
 .faq {
-    max-width: 900px;
-    margin: 50px auto;
+    margin-block: 40px;
     padding: 25px;
     background-color: #112038;
     border-radius: 10px;
@@ -389,7 +381,20 @@ input[name="element-filter"] {
     color: #ab2f54;
 }
 
-.faq p {
+details {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+summary {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+details p {
+    margin-top: 10px;
     line-height: 1.5;
 }
 /* GUIDES */
