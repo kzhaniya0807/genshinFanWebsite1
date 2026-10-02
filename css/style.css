@@ -558,22 +558,56 @@ button:focus-visible {
     border-radius: 12px;
 }
 
-.guide-faq details {
+.guide-faq {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 2.5rem 2rem 3rem;
     background: #112038;
-    border: 1px solid #2c4057;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
+    border-radius: 14px;
 }
 
-.guide-faq summary {
-    cursor: pointer;
-    font-weight: bold;
+.guide-faq h2 {
+    text-align: center;
+    color: #ab2f54;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.faq-list details {
+    background: #1c2d47;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-list summary {
+    padding: 1.4rem 1.2rem;
     color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    list-style-position: inside;
 }
 
-.guide-faq p {
-    margin-top: 1rem;
+.faq-list summary:hover {
+    background: #243752;
+}
+
+.faq-list details p {
+    margin: 0;
+    padding: 0 1.2rem 1.4rem;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+.faq-list summary:focus-visible {
+    outline: 2px solid #ab2f54;
+    outline-offset: 3px;
 }
 /*home*/
 .hero {

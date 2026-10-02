@@ -78,6 +78,30 @@
     }
 
 }
+@media (max-width: 600px) {
+    .guide-faq {
+        width: 92%;
+        padding: 2rem 1rem;
+    }
+
+    .guide-faq h2 {
+        font-size: 1.7rem;
+    }
+
+    .faq-list {
+        gap: 1rem;
+    }
+
+    .faq-list summary {
+        padding: 1.1rem 1rem;
+        font-size: 1rem;
+    }
+
+    .faq-list details p {
+        padding: 0 1rem 1.1rem;
+        font-size: 0.95rem;
+    }
+}
 
 /*regions */
 @media (max-width: 47.9375rem) {
