@@ -767,3 +767,18 @@ button:focus-visible {
 .home-region-card p {
   color: #e6edf3;
 }
+
+.home-faq h2 { text-align: center; color: #ab2f54; margin-top: 0; }
+.home-faq details {
+  background: #112038;
+  border: 1px solid #2c4057;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+}
+.home-faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #e6edf3;
+}
+.home-faq details[open] summary { color: #ab2f54; }

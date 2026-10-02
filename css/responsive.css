@@ -1,18 +1,27 @@
 /*HOME PAGE*/
-
-@media (max-width: 900px) {
-  .hero-content h1 { font-size: 2.2rem; }
-  .hero-img { height: 450px; }
-  .intro { flex-direction: column; }
+@media (min-width: 48rem) {
+  .intro {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  .features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+  .home-regions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
 }
 
-@media (max-width: 600px) {
-  .hero-content h1 { font-size: 1.6rem; }
-  .hero-img { height: 350px; }
-  .hero-buttons { flex-direction: column; width: 100%; }
-  .btn { width: 100%; text-align: center; }
-  .features-grid,
-  .home-regions-grid { grid-template-columns: 1fr; }
+@media (min-width: 64rem) {
+  .features-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .home-regions-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 /*guides */
 

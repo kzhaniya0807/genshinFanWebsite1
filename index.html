@@ -3,30 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Genshin Impact — Home</title>
+  <title>Genshin Impact — Home | GenshinHub</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="main-header">
-    <div class="logo">
-      <h2>GENSHIN<span>HUB</span></h2>
+    <div class="container header-inner">
+      <div class="logo">
+        <h2>GENSHIN<span>HUB</span></h2>
+      </div>
+      <nav class="nav-menu" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="regions.html">Regions</a>
+        <a href="characters.html">Characters</a>
+        <a href="guides.html">Guides</a>
+      </nav>
     </div>
-    <nav class="nav-menu">
-      <a href="index.html" class="active">Home</a>
-      <a href="regions.html">Regions</a>
-      <a href="characters.html">Characters</a>
-      <a href="guides.html">Guides</a>
-    </nav>
   </header>
 
-  <main>
+  <main id="main-content">
 
-    <section class="hero">
-      <img src="images/banner.jpeg" alt="Genshin Impact characters together" class="hero-img" />
+
+    <section class="hero" aria-labelledby="hero-title">
+      <img src="images/banner.jpeg"
+           alt="Genshin Impact characters standing together in Teyvat"
+           class="hero-img"
+           width="1600" height="900" />
       <div class="hero-content">
-        <h1>Embark on a Journey Across Teyvat</h1>
+        <h1 id="hero-title">Embark on a Journey Across Teyvat</h1>
         <p>Discover a vast open world filled with elemental magic and unforgettable characters.</p>
         <div class="hero-buttons">
           <a href="characters.html" class="btn">Meet the Characters</a>
@@ -35,28 +43,30 @@
       </div>
     </section>
 
-    <section class="intro">
+    
+    <section class="intro container" aria-labelledby="intro-title">
       <article>
-        <h2>What is Genshin Impact?</h2>
+        <h2 id="intro-title">What is Genshin Impact?</h2>
         <p>
           Genshin Impact is an open-world action RPG by HoYoverse. Play as the
           Traveler, journey through the seven nations of Teyvat, master the
           elements, and uncover the secrets of the gods.
         </p>
       </article>
-      <aside>
-        <h3>Quick Facts</h3>
+      <aside aria-labelledby="facts-title">
+        <h3 id="facts-title">Quick Facts</h3>
         <ul>
           <li>7 nations to explore</li>
           <li>70+ playable characters</li>
-          <li>PC, Mobile & PlayStation</li>
+          <li>PC, Mobile &amp; PlayStation</li>
           <li>Free to play</li>
         </ul>
       </aside>
     </section>
 
-    <section class="features">
-      <h2>Game Features</h2>
+    
+    <section class="features container" aria-labelledby="features-title">
+      <h2 id="features-title">Game Features</h2>
       <div class="features-grid">
         <article class="feature-card">
           <h3>Elemental Combat</h3>
@@ -85,46 +95,47 @@
       </div>
     </section>
 
-    <section class="home-regions">
-      <h2>Featured Regions</h2>
+    
+    <section class="home-regions container" aria-labelledby="regions-title">
+      <h2 id="regions-title">Featured Regions</h2>
       <div class="home-regions-grid">
         <figure class="home-region-card">
-          <img src="images/mondstadt.png" alt="Mondstadt city" />
+          <img src="images/mondstadt.png" alt="Mondstadt city with windmills" width="800" height="500" />
           <figcaption>
             <h3>Mondstadt</h3>
             <p>The City of Freedom.</p>
           </figcaption>
         </figure>
         <figure class="home-region-card">
-          <img src="images/liyue.jpg" alt="Liyue harbor" />
+          <img src="images/liyue.jpg" alt="Liyue harbour at sunset" width="800" height="500" />
           <figcaption>
             <h3>Liyue</h3>
             <p>The land of contracts.</p>
           </figcaption>
         </figure>
         <figure class="home-region-card">
-          <img src="images/inazuma.jpg" alt="Inazuma islands" />
+          <img src="images/inazuma.jpg" alt="Inazuma islands with sakura trees" width="800" height="500" />
           <figcaption>
             <h3>Inazuma</h3>
             <p>The nation of eternity.</p>
           </figcaption>
         </figure>
         <figure class="home-region-card">
-          <img src="images/sumeru.jpg" alt="Sumeru rainforest" />
+          <img src="images/sumeru.jpg" alt="Sumeru rainforest canopy" width="800" height="500" />
           <figcaption>
             <h3>Sumeru</h3>
             <p>The land of wisdom.</p>
           </figcaption>
         </figure>
         <figure class="home-region-card">
-          <img src="images/fontaine.jpg" alt="Fontaine canals" />
+          <img src="images/fontaine.jpg" alt="Fontaine canals and architecture" width="800" height="500" />
           <figcaption>
             <h3>Fontaine</h3>
             <p>The nation of justice.</p>
           </figcaption>
         </figure>
         <figure class="home-region-card">
-          <img src="images/natlan.jpg" alt="Natlan volcanoes" />
+          <img src="images/natlan.jpg" alt="Natlan volcanoes and tribal lands" width="800" height="500" />
           <figcaption>
             <h3>Natlan</h3>
             <p>The land of fire.</p>
@@ -133,10 +144,35 @@
       </div>
     </section>
 
+    <!-- SECTION 5: FAQ (native HTML interaction) -->
+    <section class="home-faq container" aria-labelledby="faq-title">
+      <h2 id="faq-title">Frequently Asked Questions</h2>
+      <details>
+        <summary>Is Genshin Impact free to play?</summary>
+        <p>Yes. The base game is free; optional in-game purchases exist.</p>
+      </details>
+      <details>
+        <summary>Which platforms are supported?</summary>
+        <p>PC, iOS, Android, and PlayStation 4 / 5.</p>
+      </details>
+      <details>
+        <summary>Do I need to play the story in order?</summary>
+        <p>Yes — regions unlock in order, so following the Archon Quest is recommended.</p>
+      </details>
+    </section>
+
   </main>
 
   <footer class="main-footer">
-    <p>&copy; 2026 Genshin Impact Fan Project. All Rights Reserved.</p>
+    <div class="container footer-inner">
+      <p>&copy; 2026 GenshinHub — Fan Project. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="regions.html">Regions</a>
+        <a href="characters.html">Characters</a>
+        <a href="guides.html">Guides</a>
+      </nav>
+    </div>
   </footer>
 
 </body>
