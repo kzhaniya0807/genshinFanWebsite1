@@ -643,7 +643,7 @@ button:focus-visible {
   margin-bottom: 2rem;
   color: #e6edf3;
 }
-/* HERO BUTTONS (Flexbox #2) */
+/* hero buttons */
 .hero-buttons {
   display: flex;
   gap: 1rem;
@@ -665,7 +665,7 @@ button:focus-visible {
   background: #4a9eff;
   color: #fff;
 }
-/* INTRO SECTION (Flexbox #3) */
+/* intro */
 .intro {
   display: flex;
   gap: 2rem;
@@ -699,7 +699,7 @@ button:focus-visible {
 .intro li {
   padding: 0.5rem 0;
 }
-/* FEATURES GRID (Grid #1 — 6 items) */
+/* features */
 .features {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -729,7 +729,7 @@ button:focus-visible {
 .feature-card p {
   color: #e6edf3;
 }
-/* HOME REGIONS GRID (Grid #2 — 6 items) */
+/* home regions grid */
 .home-regions {
   padding: 4rem 2rem;
   max-width: 1200px;
