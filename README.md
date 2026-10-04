@@ -10,4 +10,4 @@ Team Members:
 
 Group: MT-2505
 Page ownership: Zhaniya Karibzhanova
-Deployed URL: 
+Deployed URL: https://kzhaniya0807.github.io/genshinFanWebsite1/
