@@ -169,3 +169,25 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+/* support */
+
+@media (max-width: 600px) {
+
+    .support-section {
+        width: 92%;
+        padding: 2rem 1rem;
+    }
+
+    .support-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .support-text h2 {
+        font-size: 1.7rem;
+    }
+
+    .support-form button {
+        width: 100%;
+    }
+}

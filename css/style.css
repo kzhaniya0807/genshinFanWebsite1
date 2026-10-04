@@ -825,3 +825,95 @@ button:focus-visible {
   color: #e6edf3;
 }
 .home-faq details[open] summary { color: #ab2f54; }
+/* support */
+.support-section {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 3rem 2rem;
+    background: #112038;
+    border-radius: 14px;
+}
+
+.support-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.support-text,
+.support-form {
+    flex: 1;
+    min-width: 0;
+}
+
+.support-text h2 {
+    color: #ab2f54;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.support-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.support-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: white;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #2c4057;
+    border-radius: 8px;
+    background: #1c2d47;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aeb8c5;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid #ab2f54;
+    outline-offset: 2px;
+}
+
+.support-form button {
+    align-self: flex-start;
+    padding: 0.9rem 1.8rem;
+    border: none;
+    border-radius: 8px;
+    background: #ab2f54;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.support-form button:hover {
+    background: #c13a61;
+}
