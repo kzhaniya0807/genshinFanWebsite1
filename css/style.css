@@ -917,3 +917,10 @@ button:focus-visible {
 .support-form button:hover {
     background: #c13a61;
 }
+
+/* Assyltas */
+.form-hint {
+    color: #aeb8c5;
+    font-size: 0.85rem;
+    line-height: 1.3;
+}
