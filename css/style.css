@@ -660,7 +660,7 @@ button:focus-visible {
     padding: 1rem 0;
 }
 
-.header-inner {
+.container header-inner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -697,7 +697,7 @@ button:focus-visible {
     margin-left: auto;
 }
 
-.nav-menu a {
+.nav-menu {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.2rem;
@@ -707,8 +707,8 @@ button:focus-visible {
     white-space: nowrap;
 }
 
-.nav-menu a:hover,
-.nav-menu a[aria-current="page"] {
+.nav-menu:hover,
+.nav-menu [aria-current="page"] {
     background-color: #ab2f54;
     color: #0d1117;
 }
