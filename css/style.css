@@ -653,6 +653,66 @@ button:focus-visible {
     outline-offset: 3px;
 }
 /*home*/
+/* Header */
+.main-header {
+    background-color: #112038;
+    border-bottom: 1px solid #2c4057;
+    padding: 1rem 0;
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0 2.5rem;
+}
+
+/* Logo */
+.logo {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ab2f54;
+}
+
+.logo h2 span {
+    color: #e6edf3;
+}
+
+/* Navigation */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-left: auto;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    white-space: nowrap;
+}
+
+.nav-menu a:hover,
+.nav-menu a[aria-current="page"] {
+    background-color: #ab2f54;
+    color: #0d1117;
+}
+
 .hero {
   position: relative;
   max-height: 600px;
