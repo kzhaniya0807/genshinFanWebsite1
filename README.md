@@ -1,4 +1,4 @@
-**Assignment 2. Advanced CSS Assignment Report**
+**GENSHINHUB**
 Project Topic: Game Website. Genshin Fan Website.
 Team Name: Genshin Fans
 
