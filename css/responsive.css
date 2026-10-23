@@ -192,17 +192,3 @@
         width: 100%;
     }
 }
-
-/* zhaniya task 0 and 1 */
-@media (max-width: 48rem) {
-    .theme-toggle {
-        max-width: 100%;
-    }
-}
-/* Keep the logo and button neat on small screens */
-@media (max-width: 480px) {
-    .logo {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
