@@ -1081,7 +1081,6 @@ body {
 }
 
 /* Assyltas */
-/* Assyltas */
 .js-faq-item {
   background: #112038;
   border: 1px solid #2c4057;
@@ -1107,7 +1106,6 @@ body {
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-/* The "+" sign */
 .js-faq-question::after {
   content: "+";
   font-size: 1.4rem;
@@ -1116,13 +1114,11 @@ body {
   flex: 0 0 auto;
 }
 
-/* When the button is open, change the background and text color */
 .js-faq-question[aria-expanded="true"] {
   background: #1c2d47;
   color: #ab2f54;
 }
 
-/* When the button is open, change the "+" to "−" */
 .js-faq-question[aria-expanded="true"]::after {
   content: "−";
 }
@@ -1132,7 +1128,6 @@ body {
   background: #1c2d47;
 }
 
-/* Keyboard focus outline */
 .js-faq-question:focus-visible {
   outline: 3px solid #ab2f54;
   outline-offset: -3px;
@@ -1150,7 +1145,6 @@ body {
   line-height: 1.6;
 }
 
-/* Fallback to ensure hidden works */
 .js-faq-answer[hidden] {
   display: none;
 }
