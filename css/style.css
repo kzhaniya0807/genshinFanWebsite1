@@ -1310,3 +1310,256 @@ body {
     font-size: 20px;
     margin: 30px;
 }
+
+/* zhaniya  */
+
+/* PART 1: DOM Manipulation and Events */
+
+.js-demo-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.js-demo-section > h2 {
+    color: #ab2f54;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.js-demo-section > p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.js-demo-card {
+    background-color: #112038;
+    border: 1px solid #2c4057;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.js-demo-card h3 {
+    color: #ab2f54;
+    margin-bottom: 1rem;
+}
+
+.js-demo-card label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.js-demo-card input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background-color: #1c2d47;
+    color: #e6edf3;
+    border: 1px solid #2c4057;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.js-demo-card button {
+    padding: 0.8rem 1.2rem;
+    margin: 0.25rem 0 1rem;
+    background-color: #ab2f54;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.js-demo-card button:hover {
+    background-color: #c13a61;
+}
+
+.js-demo-card button:focus-visible,
+.js-demo-card input:focus-visible {
+    outline: 3px solid #4a9eff;
+    outline-offset: 3px;
+}
+
+#welcome-message {
+    margin-top: 0.5rem;
+    color: #e6edf3;
+}
+
+/* Task 1: Light Theme */
+
+body.light-theme {
+    background-color: #f4f6fb;
+    color: #202b3c;
+}
+
+/* Header and footer */
+body.light-theme .main-header,
+body.light-theme .site-header,
+body.light-theme .main-footer {
+    background-color: #e0e8f4;
+    color: #202b3c;
+    border-color: #b8c7dc;
+}
+
+body.light-theme .logo h2 span,
+body.light-theme .logo span,
+body.light-theme .nav-menu a {
+    color: #202b3c;
+}
+
+/* Cards and content sections */
+body.light-theme .feature-card,
+body.light-theme .home-region-card,
+body.light-theme .char-card,
+body.light-theme .synergy-box,
+body.light-theme .guide-card,
+body.light-theme .guide-build article,
+body.light-theme .guide-elements article,
+body.light-theme .guide-faq,
+body.light-theme .faq-section,
+body.light-theme .faq,
+body.light-theme .timeline,
+body.light-theme .support-section,
+body.light-theme .registration-section,
+body.light-theme #favorites-section,
+body.light-theme .js-demo-card,
+body.light-theme .intro aside {
+    background-color: #ffffff;
+    color: #202b3c;
+    border-color: #c7d2e2;
+}
+
+/* Text */
+body.light-theme .feature-card p,
+body.light-theme .home-region-card p,
+body.light-theme .char-info p,
+body.light-theme .guide-card p,
+body.light-theme .guide-build p,
+body.light-theme .guide-elements p,
+body.light-theme .support-text p,
+body.light-theme .registration-section p,
+body.light-theme .registration-section label,
+body.light-theme .js-demo-card label,
+body.light-theme #welcome-message,
+body.light-theme .js-demo-section > p,
+body.light-theme .faq-list details p {
+    color: #202b3c;
+}
+
+/* Inputs */
+body.light-theme .js-demo-card input,
+body.light-theme .form-group input,
+body.light-theme .form-group textarea,
+body.light-theme .registration-section .form-control,
+body.light-theme .registration-section .form-select,
+body.light-theme #favorite-select {
+    background-color: #ffffff;
+    color: #202b3c;
+    border-color: #aab8cc;
+}
+
+body.light-theme .js-demo-card input::placeholder {
+    color: #596579;
+}
+
+/* FAQ and other interactive content */
+body.light-theme .faq-item,
+body.light-theme .faq-list details,
+body.light-theme .home-faq details,
+body.light-theme .js-faq-item {
+    background-color: #eaf0f8;
+    border-color: #c7d2e2;
+}
+
+body.light-theme .faq-item summary,
+body.light-theme .faq-list summary,
+body.light-theme .home-faq summary,
+body.light-theme .js-faq-question {
+    color: #202b3c;
+}
+
+body.light-theme .favorite-items-list li {
+    background-color: #f4f6fb;
+    color: #202b3c;
+    border-color: #c7d2e2;
+}
+
+body.light-theme .form-hint {
+    color: #596579;
+}
+
+/* Keep hero text readable over images */
+body.light-theme .hero-content h1,
+body.light-theme .hero-content p,
+body.light-theme .guide-hero h1,
+body.light-theme .guide-hero p,
+body.light-theme .region-card {
+    color: #ffffff;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    padding: 8px 14px;
+    margin-left: 10px;
+    border: 1px solid #ab2f54;
+    border-radius: 6px;
+    background-color: #ab2f54;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #8f2545;
+    border-color: #8f2545;
+    transform: translateY(-1px);
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid #e6edf3;
+    outline-offset: 3px;
+}
+
+/* Light theme */
+body.light-theme {
+    background-color: #f4f6fa;
+    color: #202938;
+}
+
+body.light-theme header,
+body.light-theme footer,
+body.light-theme .feature-card,
+body.light-theme .guide-card,
+body.light-theme .region-card,
+body.light-theme .character-card,
+body.light-theme .js-demo-card,
+body.light-theme .js-demo-section {
+    background-color: #ffffff;
+    color: #202938;
+}
+
+body.light-theme p,
+body.light-theme li,
+body.light-theme label,
+body.light-theme h2,
+body.light-theme h3 {
+    color: #202938;
+}
+
+body.light-theme .theme-toggle {
+    background-color: #ffffff;
+    color: #202938;
+}

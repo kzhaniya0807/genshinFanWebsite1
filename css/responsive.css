@@ -205,3 +205,13 @@
     font-size: 0.95rem;
   }
 }
+/* zhaniya */ 
+@media (max-width: 600px) {
+    .js-demo-section {
+        padding: 2rem 1rem;
+    }
+
+    .js-demo-card button {
+        max-width: 100%;
+    }
+}

@@ -37,6 +37,9 @@
                 </a>
             </li>
         </ul>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to light theme">
+          Light
+        </button>
     </nav>
 
 </header>
@@ -44,7 +47,32 @@
 
 
   <main>
+    
+<!-- zhaniya -->
 
+<section class="js-demo-section" aria-labelledby="js-demo-title">
+
+    <!-- task 0 welcome mess -->
+    <div class="js-demo-card">
+        <h3>Welcome to Teyvat, Traveler!
+          Personalize your visit to GenshinHub.</h3>
+
+        <label for="traveler-name">Enter your Traveler name:</label>
+        <input
+            type="text"
+            id="traveler-name"
+            placeholder="e.g. Lumin"
+        >
+
+        <button type="button" id="welcome-button">
+            Welcome, Traveler!
+        </button>
+
+        <p id="welcome-message" aria-live="polite">
+            Your adventure in Teyvat starts here!
+        </p>
+    </div>
+</section>
 
     <section class="hero" aria-labelledby="hero-title">
       <img src="images/banner.jpeg"
@@ -534,6 +562,8 @@
       </nav>
     </div>
   </footer>
+  
+<script src="js/theme.js"></script>
 
 </body>
 </html>
