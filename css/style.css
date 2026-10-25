@@ -1270,3 +1270,43 @@ body {
     background-color: #ab2f54;
     color: #0d1117;
 }
+
+/*task3*/
+
+.search-box {
+    margin: 25px auto;
+    text-align: center;
+}
+
+.search-box label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 300px;
+    max-width: 90%;
+    border: 1px solid #ab2f54;
+    border-radius: 8px;
+    background-color: #112038;
+    color: white;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #ff6b9a;
+}
+
+#resultCount {
+    margin-top: 15px;
+    color: white;
+}
+
+#noResults {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+}
