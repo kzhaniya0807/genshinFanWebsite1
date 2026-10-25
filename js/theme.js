@@ -1,24 +1,26 @@
+
 "use strict";
 
 // Task 0 Welcome
 const travelerName = document.getElementById("traveler-name");
 const welcomeMessage = document.getElementById("welcome-message");
+const welcomeButton = document.getElementById("welcome-button");
 
-const welcomeButton = document.querySelector("#welcome-button");
+if (travelerName && welcomeMessage && welcomeButton) {
+    welcomeButton.addEventListener("click", function () {
+        const name = travelerName.value.trim();
 
-welcomeButton.addEventListener("click", function () {
-    const name = travelerName.value.trim();
+        if (name === "") {
+            welcomeMessage.textContent =
+                "Please enter your Traveler name to begin your adventure!";
+        } else {
+            welcomeMessage.textContent =
+                "Welcome to Teyvat, " + name + "! Your adventure awaits!";
+        }
+    });
+}
 
-    if (name === "") {
-        welcomeMessage.textContent =
-            "Please enter your Traveler name to begin your adventure!";
-    } else {
-        welcomeMessage.textContent =
-            "Welcome to Teyvat, " + name + "! Your adventure awaits!";
-    }
-});
-
-// Theme Switcher
+// Task 1 Theme Switcher
 const themeButtons = document.querySelectorAll(".theme-toggle");
 
 function updateThemeButtons() {
@@ -29,7 +31,9 @@ function updateThemeButtons() {
 
         button.setAttribute(
             "aria-label",
-            isLightTheme ? "Switch to dark theme" : "Switch to light theme"
+            isLightTheme
+                ? "Switch to dark theme"
+                : "Switch to light theme"
         );
     });
 }
