@@ -1414,6 +1414,7 @@ body.light-theme .nav-menu a {
 }
 
 /* Cards and content sections */
+body.light-theme .regions0-container,
 body.light-theme .feature-card,
 body.light-theme .home-region-card,
 body.light-theme .char-card,
@@ -1436,6 +1437,7 @@ body.light-theme .intro aside {
 }
 
 /* Text */
+body.light-theme .filter-section,
 body.light-theme .feature-card p,
 body.light-theme .home-region-card p,
 body.light-theme .char-info p,
@@ -1470,13 +1472,13 @@ body.light-theme .js-demo-card input::placeholder {
 
 /* FAQ and other interactive content */
 body.light-theme .faq-item,
+body.light-theme .faq-container
 body.light-theme .faq-list details,
 body.light-theme .home-faq details,
 body.light-theme .js-faq-item {
     background-color: #eaf0f8;
     border-color: #c7d2e2;
 }
-
 body.light-theme .faq-item summary,
 body.light-theme .faq-list summary,
 body.light-theme .home-faq summary,
@@ -1533,3 +1535,79 @@ body.light-theme .region-card {
     outline-offset: 3px;
 }
 
+/* Light theme Regions page */
+body.light-theme .regions0,
+body.light-theme .faq {
+    background-color: #ffffff;
+    color: #202938;
+}
+
+body.light-theme .regions0 h1,
+body.light-theme .regions0 p,
+body.light-theme .faq h2,
+body.light-theme .faq summary,
+body.light-theme .faq details p {
+    color: #202938;
+}
+
+body.light-theme .faq details {
+    background-color: #f4f6fa;
+    color: #202938;
+    border-color: #d5dbe5;
+}
+
+body.light-theme .faq summary {
+    cursor: pointer;
+}
+
+body.light-theme .faq details p {
+    background-color: transparent;
+}
+
+/* Light theme Characters filter section */
+body.light-theme .filter-section {
+    background-color: #ffffff;
+    color: #202938;
+}
+
+body.light-theme .filter-section h1,
+body.light-theme .filter-section p,
+body.light-theme .filter-section label,
+body.light-theme #resultCount {
+    color: #202938;
+}
+
+body.light-theme .filter-section input {
+    background-color: #f4f6fa;
+    color: #202938;
+    border: 1px solid #d5dbe5;
+}
+
+body.light-theme .filter-section input::placeholder {
+    color: #687386;
+}
+
+/* Light theme Character filter buttons */
+body.light-theme .filter-bar .filter-btn {
+    background-color: #ffffff;
+    color: #202938;
+    border-color: #d5dbe5;
+}
+
+body.light-theme .filter-bar .filter-btn:hover {
+    background-color: #f4f6fa;
+    color: #ab2f54;
+    border-color: #ab2f54;
+}
+
+body.light-theme #all:checked ~ .filter-section .filter-bar label[for="all"],
+body.light-theme #pyro:checked ~ .filter-section .filter-bar label[for="pyro"],
+body.light-theme #hydro:checked ~ .filter-section .filter-bar label[for="hydro"],
+body.light-theme #anemo:checked ~ .filter-section .filter-bar label[for="anemo"],
+body.light-theme #electro:checked ~ .filter-section .filter-bar label[for="electro"],
+body.light-theme #cryo:checked ~ .filter-section .filter-bar label[for="cryo"],
+body.light-theme #geo:checked ~ .filter-section .filter-bar label[for="geo"],
+body.light-theme #dendro:checked ~ .filter-section .filter-bar label[for="dendro"] {
+    background-color: #ab2f54;
+    color: #ffffff;
+}
