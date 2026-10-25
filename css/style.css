@@ -1148,3 +1148,125 @@ body {
 .js-faq-answer[hidden] {
   display: none;
 }
+
+/* favorite characters section */
+#favorites-section {
+    background-color: #112038;
+    border: 1px solid #2c4057;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-top: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#favorites-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #ab2f54;
+}
+
+#favorites-section > p {
+    text-align: center;
+    color: #e6edf3;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.favorite-form-box {
+    margin-bottom: 1.5rem;
+}
+
+#favorite-select {
+    flex: 1;
+    min-width: 250px;
+    padding: 0.75rem 1rem;
+    background-color: #0d1117;
+    border: 1px solid #2c4057;
+    color: #e6edf3;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+#favorite-select:focus {
+    border-color: #ab2f54;
+    box-shadow: 0 0 0 3px rgba(171, 47, 84, 0.2);
+}
+
+#favorite-select option {
+    background-color: #112038;
+    color: #e6edf3;
+}
+
+.favorite-add-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #ab2f54;
+    border: 1px solid #ab2f54;
+    color: #0d1117;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.25s ease;
+}
+
+.favorite-add-btn:hover {
+    background-color: #922647;
+    border-color: #922647;
+    color: #e6edf3;
+    transform: translateY(-2px);
+}
+
+.favorites-count-text {
+    text-align: center;
+    color: #a0a8b6;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.favorite-items-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* added elements */
+.favorite-items-list li {
+    background-color: #0d1117;
+    border: 1px solid #2c4057;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    color: #e6edf3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    transition: border-color 0.2s ease;
+}
+
+.favorite-items-list li:hover {
+    border-color: #ab2f54;
+}
+
+/* delete button */
+
+.favorite-items-list li button {
+    background-color: transparent;
+    border: 1px solid #ab2f54;
+    color: #ab2f54;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.favorite-items-list li button:hover {
+    background-color: #ab2f54;
+    color: #0d1117;
+}
