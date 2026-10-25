@@ -1533,33 +1533,3 @@ body.light-theme .region-card {
     outline-offset: 3px;
 }
 
-/* Light theme */
-body.light-theme {
-    background-color: #f4f6fa;
-    color: #202938;
-}
-
-body.light-theme header,
-body.light-theme footer,
-body.light-theme .feature-card,
-body.light-theme .guide-card,
-body.light-theme .region-card,
-body.light-theme .character-card,
-body.light-theme .js-demo-card,
-body.light-theme .js-demo-section {
-    background-color: #ffffff;
-    color: #202938;
-}
-
-body.light-theme p,
-body.light-theme li,
-body.light-theme label,
-body.light-theme h2,
-body.light-theme h3 {
-    color: #202938;
-}
-
-body.light-theme .theme-toggle {
-    background-color: #ffffff;
-    color: #202938;
-}
