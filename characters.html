@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+      <!-- Assyltas — jQuery before project scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/characters.js" defer></script>
 </head>
 
 <body>
@@ -52,9 +55,45 @@
         </div>
     </section>
 
+       <!-- Assyltas — Task 3: jQuery search + category filter -->
+    <section class="char-filter-section" aria-labelledby="char-filter-title">
+        <h2 id="char-filter-title">Find a Character</h2>
+
+        <div class="char-filter-controls">
+            <div class="form-group">
+                <label for="char-search">Search by name, weapon, or element</label>
+                <input type="search" id="char-search" class="form-control"
+                       placeholder="e.g. Arlecchino, sword, hydro…"
+                       autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label for="char-category">Category</label>
+                <select id="char-category" class="form-select">
+                    <option value="all">All elements</option>
+                    <option value="pyro">Pyro</option>
+                    <option value="hydro">Hydro</option>
+                    <option value="anemo">Anemo</option>
+                    <option value="electro">Electro</option>
+                    <option value="cryo">Cryo</option>
+                    <option value="geo">Geo</option>
+                    <option value="dendro">Dendro</option>
+                </select>
+            </div>
+        </div>
+
+        <p id="char-filter-count" class="char-filter-count" aria-live="polite">
+            Showing all 14 characters
+        </p>
+        <p id="char-no-results" class="char-no-results" hidden>No results found.</p>
+    </section>
+    <!-- Assyltas end Task 3 -->
+
     <!-- SECTION 2 -->
     <section class="character-display">
-        <div class="character-grid">
+
+        
+        <div class="character-grid">  
 
             <!-- Card 1 -->
             <article class="char-card" data-element="pyro">
@@ -211,6 +250,32 @@
             </article>
         </div>
     </section>
+
+        <!-- Assyltas — Task 4: Favourites list with delegated events -->
+    <section class="favourites-section" aria-labelledby="fav-title">
+        <h2 id="fav-title">My Favourite Characters</h2>
+
+        <form id="fav-form" class="fav-form" novalidate>
+            <div class="form-group">
+                <label for="fav-input">Add a character to your shortlist</label>
+                <input type="text" id="fav-input" class="form-control"
+                       placeholder="e.g. Furina" maxlength="50" autocomplete="off">
+                <p id="fav-error" class="fav-error" role="alert" hidden>
+                    Please enter a character name.
+                </p>
+            </div>
+            <button type="submit" class="btn">Add</button>
+        </form>
+
+        <p id="fav-count" class="fav-count" aria-live="polite">0 favourites</p>
+
+        <ul id="fav-list" class="fav-list"></ul>
+
+        <p id="fav-empty" class="fav-empty">
+            Your shortlist is empty. Add your first character above!
+        </p>
+    </section>
+    <!-- Assyltas -->
 
     <!-- SECTION 3 -->
     <section class="elemental-resonance">

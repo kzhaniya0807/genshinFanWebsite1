@@ -1148,3 +1148,118 @@ body {
 .js-faq-answer[hidden] {
   display: none;
 }
+
+/* Assyltas — Task 3 filter styles */
+.char-filter-section {
+  margin-block: 2rem;
+  padding: 2rem;
+  background: #112038;
+  border: 1px solid #2c4057;
+  border-radius: 12px;
+}
+.char-filter-section h2 {
+  color: #ab2f54;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.char-filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+.char-filter-controls .form-group { flex: 1 1 240px; }
+.char-filter-count {
+  margin-top: 1rem;
+  color: #aeb8c5;
+  font-size: 0.95rem;
+}
+.char-no-results {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background: #1c2d47;
+  border: 1px dashed #ab2f54;
+  border-radius: 8px;
+  color: #ff8fa8;
+  text-align: center;
+  font-weight: 600;
+}
+.char-no-results[hidden] { display: none; }
+.char-card.is-hidden { display: none !important; }
+
+/* Assyltas — Task 4 favourites styles */
+.favourites-section {
+  margin-block: 3rem;
+  padding: 2rem;
+  background: #112038;
+  border: 1px solid #2c4057;
+  border-radius: 12px;
+}
+.favourites-section h2 {
+  color: #ab2f54;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.fav-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+.fav-form .form-group { flex: 1 1 260px; }
+.fav-error {
+  color: #ff8fa8;
+  font-size: 0.9rem;
+  margin-top: 0.35rem;
+}
+.fav-error[hidden] { display: none; }
+.fav-count {
+  color: #aeb8c5;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.fav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.fav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  background: #1c2d47;
+  border: 1px solid #2c4057;
+  border-radius: 8px;
+}
+.fav-item span {
+  color: #e6edf3;
+  word-break: break-word;
+}
+.fav-remove {
+  padding: 0.4rem 0.9rem;
+  background: #ab2f54;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.fav-remove:hover,
+.fav-remove:focus-visible {
+  background: #c13a61;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.fav-empty {
+  color: #aeb8c5;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+}
+.fav-empty[hidden] { display: none; }
