@@ -1,9 +1,6 @@
-/* Assyltas — Tasks 3 & 4 for characters.html */
 $(function () {
 
-  /* ============================================================
-     TASK 3 — combined search + category filtering
-     ============================================================ */
+  /* TASK 3 — combined search + category filtering */
   const $cards    = $('.char-card');
   const $search   = $('#char-search');
   const $category = $('#char-category');
@@ -19,7 +16,6 @@ $(function () {
     $cards.each(function () {
       const $card = $(this);
       const element = String($card.data('element') || '').toLowerCase();
-      // Search the entire card text — name, weapon, rarity, description
       const text    = String($card.text()).toLowerCase();
 
       const matchesSearch   = query === '' || text.includes(query);
@@ -43,13 +39,11 @@ $(function () {
     }
   }
 
-  $search.on('input', applyFilters);   // filter while typing
-  $category.on('change', applyFilters); // combine with category
+  $search.on('input', applyFilters);   
+  $category.on('change', applyFilters); 
   applyFilters(); // initial state
 
-  /* ============================================================
-     TASK 4 — dynamic favourites list with delegated remove
-     ============================================================ */
+  /*TASK 4 — dynamic favourites list with delegated remove*/
   const $favForm  = $('#fav-form');
   const $favInput = $('#fav-input');
   const $favError = $('#fav-error');
@@ -65,7 +59,7 @@ $(function () {
 
   function addFavourite(name) {
     const $item = $('<li>').addClass('fav-item');
-    $('<span>').text(name).appendTo($item);       // safe: no raw HTML
+    $('<span>').text(name).appendTo($item);       
     $('<button>')
       .attr('type', 'button')
       .addClass('fav-remove')
@@ -82,7 +76,7 @@ $(function () {
 
     if (value === '') {
       $favError.prop('hidden', false);
-      $favInput.val('');            // keep state consistent
+      $favInput.val('');            
       $favInput.trigger('focus');
       return;
     }
@@ -97,7 +91,6 @@ $(function () {
     if ($.trim($favInput.val()) !== '') $favError.prop('hidden', true);
   });
 
-  // Delegated .on() — works on items added later
   $favList.on('click', '.fav-remove', function () {
     $(this).closest('.fav-item').remove();
     updateFavState();
