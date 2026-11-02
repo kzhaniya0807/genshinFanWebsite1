@@ -41,7 +41,7 @@ $(function () {
 
   $search.on('input', applyFilters);   
   $category.on('change', applyFilters); 
-  applyFilters(); // initial state
+  applyFilters();
 
   /*TASK 4 — dynamic favourites list with delegated remove*/
   const $favForm  = $('#fav-form');
