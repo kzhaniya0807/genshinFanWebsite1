@@ -24,6 +24,9 @@
         <a href="regions.html">Regions</a>
         <a href="characters.html" class="active">Characters</a>
         <a href="guides.html">Guides</a>
+        <button type="button" class="theme-toggle" aria-label="Switch to light theme">
+          Light
+        </button>
     </nav>
 </header>
 
@@ -42,7 +45,13 @@
     <section class="filter-section">
         <h1>Teyvat Playable Characters</h1>
         <p>Filter characters by element or search for your favorite hero.</p>
+        <div class="search-box">
+            <label for="characterSearch">Search Characters:</label>
+            <input type="text" id="characterSearch" placeholder="Enter character name...">
 
+            <p id="resultCount">14 characters found</p>
+        </div>
+        
         <div class="filter-bar">
             <label for="all" class="filter-btn">All</label>
             <label for="pyro" class="filter-btn">Pyro</label>
@@ -91,9 +100,14 @@
 
     <!-- SECTION 2 -->
     <section class="character-display">
+<<<<<<< HEAD
 
         
         <div class="character-grid">  
+=======
+        <p id="noResults" style="display: none;">No results found</p>
+        <div class="character-grid">
+>>>>>>> 3d24f056c0def3ada6f3721e097bbe832fd6f8fb
 
             <!-- Card 1 -->
             <article class="char-card" data-element="pyro">
@@ -316,6 +330,44 @@
             <p>Elemental Reactions occur when you combine two or more elements on a single target, dealing extra damage or applying status effects like Freeze or Vaporize.</p>
         </details>
      </section>
+
+     <!-- Task 4: Create and remove elements -->
+      <section class="faq-section" id="favorites-section">
+        <h2>My Favorite Genshin Characters</h2>
+        <p class="favorites-subtitle">Select your favorite characters to add them to your personal wishlist.</p>
+        
+        <form id="favorite-form" class="favorite-form-box">
+            <div class="favorite-input-group">
+                <label for="favorite-select" class="visually-hidden"><strong>Character Name</strong></label>
+
+                <select id="favorite-select" class="form-control" required>
+                    <option value="" disabled selected>-- Choose a character --</option>
+                    <option value="Arlecchino">Arlecchino</option>
+                    <option value="Mavuika">Mavuika</option>
+                    <option value="Furina">Furina</option>
+                    <option value="Neuvillette">Neuvillette</option>
+                    <option value="Kazuha">Kazuha</option>
+                    <option value="Ifa">Ifa</option>
+                    <option value="Iansan">Iansan</option>
+                    <option value="Raiden Shogun">Raiden Shogun</option>
+                    <option value="Kaeya">Kaeya</option>
+                    <option value="Sandrone">Sandrone</option>
+                    <option value="Yun Jin">Yun Jin</option>
+                    <option value="Zhongli">Zhongli</option>
+                    <option value="Alhaitham">Alhaitham</option>
+                    <option value="Collei">Collei</option>
+                </select>
+                <button type="submit" class="favorite-add-btn">Add Character</button>
+            </div>
+        </form>
+
+        <p class="favorites-count-text">Total favorites: <span id="favorite-count">0</span></p>
+
+        <ul id="favorite-list" class="favorite-items-list">
+
+        </ul>
+      </section>
+
 </main>
 
 <footer class="main-footer">
@@ -323,5 +375,8 @@
 
 </footer>
 
+<script src="js/fav_characters.js" defer></script>
+<script src="js/characterSearch.js"></script>
+<script src="js/theme.js"></script>
 </body>
 </html>

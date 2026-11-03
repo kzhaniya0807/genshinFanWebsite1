@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <script src="js/faq.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 
@@ -36,16 +37,17 @@
                     Guides
                 </a>
             </li>
+            <li> <button type="button" class="theme-toggle" aria-label="Switch to light theme">
+            Light
+            </button> 
+            </li>
         </ul>
     </nav>
 
 </header>
 
 
-
   <main>
-
-
     <section class="hero" aria-labelledby="hero-title">
       <img src="images/banner.jpeg"
            alt="Genshin Impact characters standing together in Teyvat"
@@ -60,7 +62,33 @@
         </div>
       </div>
     </section>
+    <!-- zhaniya -->
 
+    <section class="js-demo-section" aria-labelledby="js-demo-title">
+
+        <!-- task 0 welcome mess -->
+        <div class="js-demo-card">
+            <h3>Welcome to Teyvat, Traveler!
+              Personalize your visit to GenshinHub.</h3>
+
+            <label for="traveler-name">Enter your Traveler name:</label>
+            <input
+                type="text"
+                id="traveler-name"
+                placeholder="e.g. Lumin"
+            >
+
+            <button type="button" id="welcome-button">
+                Welcome, Traveler!
+            </button>
+
+            <p id="welcome-message" aria-live="polite">
+                
+            </p>
+        </div>
+    </section>
+
+    
     
     <section class="intro container" aria-labelledby="intro-title">
       <article>
@@ -306,6 +334,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="support-form-result" class="text-success mt-3" role="status" aria-live="polite"></p>
         </form>
         <!-- Aruzhan -->
         <!-- Assyltas -->
@@ -534,6 +563,51 @@
       </nav>
     </div>
   </footer>
+  <script src="js/theme.js"></script>
 
+  <!-- Task 5: Aelin -->
+<script>
+$(document).ready(function() {
+
+    $("#supportForm").on("submit", function(event) {
+
+        event.preventDefault();
+
+        let name = $("#support-name").val().trim();
+        let email = $("#support-email").val().trim();
+        let message = $("#support-message").val().trim();
+
+        let nameValid = name.length >= 2;
+        let emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        let messageValid = message.length >= 10 && message.length <= 500;
+
+        $("#support-name").toggleClass("is-invalid", !nameValid);
+        $("#support-name").toggleClass("is-valid", nameValid);
+
+        $("#support-email").toggleClass("is-invalid", !emailValid);
+        $("#support-email").toggleClass("is-valid", emailValid);
+
+        $("#support-message").toggleClass("is-invalid", !messageValid);
+        $("#support-message").toggleClass("is-valid", messageValid);
+
+        $("#support-form-result").text("");
+
+        if (nameValid && emailValid && messageValid) {
+
+            $("#support-form-result")
+                .text("Demo only: Your message has been validated successfully. No message was actually sent.");
+
+        }
+
+    });
+
+    $("#supportForm input, #supportForm textarea").on("input", function() {
+        $(this).removeClass("is-invalid is-valid");
+        $("#support-form-result").text("");
+    });
+
+});
+</script>
+<!-- Aelin -->
 </body>
 </html>

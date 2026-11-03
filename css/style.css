@@ -1149,6 +1149,7 @@ body {
   display: none;
 }
 
+<<<<<<< HEAD
 /* Assyltas — Task 3 filter styles */
 .char-filter-section {
   margin-block: 2rem;
@@ -1263,3 +1264,467 @@ body {
   padding: 1rem;
 }
 .fav-empty[hidden] { display: none; }
+=======
+/* favorite characters section */
+#favorites-section {
+    background-color: #112038;
+    border: 1px solid #2c4057;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-top: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#favorites-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #ab2f54;
+}
+
+#favorites-section > p {
+    text-align: center;
+    color: #e6edf3;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.favorite-form-box {
+    margin-bottom: 1.5rem;
+}
+
+#favorite-select {
+    flex: 1;
+    min-width: 250px;
+    padding: 0.75rem 1rem;
+    background-color: #0d1117;
+    border: 1px solid #2c4057;
+    color: #e6edf3;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+#favorite-select:focus {
+    border-color: #ab2f54;
+    box-shadow: 0 0 0 3px rgba(171, 47, 84, 0.2);
+}
+
+#favorite-select option {
+    background-color: #112038;
+    color: #e6edf3;
+}
+
+.favorite-add-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #ab2f54;
+    border: 1px solid #ab2f54;
+    color: #0d1117;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.25s ease;
+}
+
+.favorite-add-btn:hover {
+    background-color: #922647;
+    border-color: #922647;
+    color: #e6edf3;
+    transform: translateY(-2px);
+}
+
+.favorites-count-text {
+    text-align: center;
+    color: #a0a8b6;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.favorite-items-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* added elements */
+.favorite-items-list li {
+    background-color: #0d1117;
+    border: 1px solid #2c4057;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    color: #e6edf3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    transition: border-color 0.2s ease;
+}
+
+.favorite-items-list li:hover {
+    border-color: #ab2f54;
+}
+
+/* delete button */
+
+.favorite-items-list li button {
+    background-color: transparent;
+    border: 1px solid #ab2f54;
+    color: #ab2f54;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.favorite-items-list li button:hover {
+    background-color: #ab2f54;
+    color: #0d1117;
+}
+
+/*task3*/
+
+.search-box {
+    margin: 25px auto;
+    text-align: center;
+}
+
+.search-box label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 300px;
+    max-width: 90%;
+    border: 1px solid #ab2f54;
+    border-radius: 8px;
+    background-color: #112038;
+    color: white;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #ff6b9a;
+}
+
+#resultCount {
+    margin-top: 15px;
+    color: white;
+}
+
+#noResults {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+}
+
+/* zhaniya  */
+
+/* PART 1: DOM Manipulation and Events */
+
+.js-demo-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.js-demo-section > h2 {
+    color: #ab2f54;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.js-demo-section > p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.js-demo-card {
+    background-color: #112038;
+    border: 1px solid #2c4057;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.js-demo-card h3 {
+    color: #ab2f54;
+    margin-bottom: 1rem;
+}
+
+.js-demo-card label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.js-demo-card input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background-color: #1c2d47;
+    color: #e6edf3;
+    border: 1px solid #2c4057;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.js-demo-card button {
+    padding: 0.8rem 1.2rem;
+    margin: 0.25rem 0 1rem;
+    background-color: #ab2f54;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.js-demo-card button:hover {
+    background-color: #c13a61;
+}
+
+.js-demo-card button:focus-visible,
+.js-demo-card input:focus-visible {
+    outline: 3px solid #4a9eff;
+    outline-offset: 3px;
+}
+
+#welcome-message {
+    margin-top: 0.5rem;
+    color: #e6edf3;
+}
+
+/* Task 1: Light Theme */
+
+body.light-theme {
+    background-color: #f4f6fb;
+    color: #202b3c;
+}
+
+/* Header and footer */
+body.light-theme .main-header,
+body.light-theme .site-header,
+body.light-theme .main-footer {
+    background-color: #e0e8f4;
+    color: #202b3c;
+    border-color: #b8c7dc;
+}
+
+body.light-theme .logo h2 span,
+body.light-theme .logo span,
+body.light-theme .nav-menu a {
+    color: #202b3c;
+}
+
+/* Cards and content sections */
+body.light-theme .regions0-container,
+body.light-theme .feature-card,
+body.light-theme .home-region-card,
+body.light-theme .char-card,
+body.light-theme .synergy-box,
+body.light-theme .guide-card,
+body.light-theme .guide-build article,
+body.light-theme .guide-elements article,
+body.light-theme .guide-faq,
+body.light-theme .faq-section,
+body.light-theme .faq,
+body.light-theme .timeline,
+body.light-theme .support-section,
+body.light-theme .registration-section,
+body.light-theme #favorites-section,
+body.light-theme .js-demo-card,
+body.light-theme .intro aside {
+    background-color: #ffffff;
+    color: #202b3c;
+    border-color: #c7d2e2;
+}
+
+/* Text */
+body.light-theme .filter-section,
+body.light-theme .feature-card p,
+body.light-theme .home-region-card p,
+body.light-theme .char-info p,
+body.light-theme .guide-card p,
+body.light-theme .guide-build p,
+body.light-theme .guide-elements p,
+body.light-theme .support-text p,
+body.light-theme .registration-section p,
+body.light-theme .registration-section label,
+body.light-theme .js-demo-card label,
+body.light-theme #welcome-message,
+body.light-theme .js-demo-section > p,
+body.light-theme .faq-list details p {
+    color: #202b3c;
+}
+
+/* Inputs */
+body.light-theme .js-demo-card input,
+body.light-theme .form-group input,
+body.light-theme .form-group textarea,
+body.light-theme .registration-section .form-control,
+body.light-theme .registration-section .form-select,
+body.light-theme #favorite-select {
+    background-color: #ffffff;
+    color: #202b3c;
+    border-color: #aab8cc;
+}
+
+body.light-theme .js-demo-card input::placeholder {
+    color: #596579;
+}
+
+/* FAQ and other interactive content */
+body.light-theme .faq-item,
+body.light-theme .faq-container
+body.light-theme .faq-list details,
+body.light-theme .home-faq details,
+body.light-theme .js-faq-item {
+    background-color: #eaf0f8;
+    border-color: #c7d2e2;
+}
+body.light-theme .faq-item summary,
+body.light-theme .faq-list summary,
+body.light-theme .home-faq summary,
+body.light-theme .js-faq-question {
+    color: #202b3c;
+}
+
+body.light-theme .favorite-items-list li {
+    background-color: #f4f6fb;
+    color: #202b3c;
+    border-color: #c7d2e2;
+}
+
+body.light-theme .form-hint {
+    color: #596579;
+}
+
+/* Keep hero text readable over images */
+body.light-theme .hero-content h1,
+body.light-theme .hero-content p,
+body.light-theme .guide-hero h1,
+body.light-theme .guide-hero p,
+body.light-theme .region-card {
+    color: #ffffff;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    padding: 8px 14px;
+    margin-left: 10px;
+    border: 1px solid #ab2f54;
+    border-radius: 6px;
+    background-color: #ab2f54;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #8f2545;
+    border-color: #8f2545;
+    transform: translateY(-1px);
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid #e6edf3;
+    outline-offset: 3px;
+}
+
+/* Light theme Regions page */
+body.light-theme .regions0,
+body.light-theme .faq {
+    background-color: #ffffff;
+    color: #202938;
+}
+
+body.light-theme .regions0 h1,
+body.light-theme .regions0 p,
+body.light-theme .faq h2,
+body.light-theme .faq summary,
+body.light-theme .faq details p {
+    color: #202938;
+}
+
+body.light-theme .faq details {
+    background-color: #f4f6fa;
+    color: #202938;
+    border-color: #d5dbe5;
+}
+
+body.light-theme .faq summary {
+    cursor: pointer;
+}
+
+body.light-theme .faq details p {
+    background-color: transparent;
+}
+
+/* Light theme Characters filter section */
+body.light-theme .filter-section {
+    background-color: #ffffff;
+    color: #202938;
+}
+
+body.light-theme .filter-section h1,
+body.light-theme .filter-section p,
+body.light-theme .filter-section label,
+body.light-theme #resultCount {
+    color: #202938;
+}
+
+body.light-theme .filter-section input {
+    background-color: #f4f6fa;
+    color: #202938;
+    border: 1px solid #d5dbe5;
+}
+
+body.light-theme .filter-section input::placeholder {
+    color: #687386;
+}
+
+/* Light theme Character filter buttons */
+body.light-theme .filter-bar .filter-btn {
+    background-color: #ffffff;
+    color: #202938;
+    border-color: #d5dbe5;
+}
+
+body.light-theme .filter-bar .filter-btn:hover {
+    background-color: #f4f6fa;
+    color: #ab2f54;
+    border-color: #ab2f54;
+}
+
+body.light-theme #all:checked ~ .filter-section .filter-bar label[for="all"],
+body.light-theme #pyro:checked ~ .filter-section .filter-bar label[for="pyro"],
+body.light-theme #hydro:checked ~ .filter-section .filter-bar label[for="hydro"],
+body.light-theme #anemo:checked ~ .filter-section .filter-bar label[for="anemo"],
+body.light-theme #electro:checked ~ .filter-section .filter-bar label[for="electro"],
+body.light-theme #cryo:checked ~ .filter-section .filter-bar label[for="cryo"],
+body.light-theme #geo:checked ~ .filter-section .filter-bar label[for="geo"],
+body.light-theme #dendro:checked ~ .filter-section .filter-bar label[for="dendro"] {
+    background-color: #ab2f54;
+    color: #ffffff;
+}
+>>>>>>> 3d24f056c0def3ada6f3721e097bbe832fd6f8fb

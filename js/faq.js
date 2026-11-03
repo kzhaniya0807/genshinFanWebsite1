@@ -1,18 +1,26 @@
+$(document).ready(function() {
+    const $faqQuestions = $(".js-faq-question");
 
+    $faqQuestions.on("click", function(e) {
+        e.preventDefault();
 
-const faqQuestions = document.querySelectorAll(".js-faq-question");
+        const $button = $(this);
+        const answerId = $button.attr("aria-controls");
+        const $answer = $("#" + answerId);
 
-faqQuestions.forEach((button) => {
-  button.addEventListener("click", () => {
+        if (!$answer.length) return;
 
-    const answerId = button.getAttribute("aria-controls");
-    const answer = document.getElementById(answerId);
-    
-    if (!answer) return;
-    
-    const isExpanded = button.getAttribute("aria-expanded") === "true";
-    
-    button.setAttribute("aria-expanded", String(!isExpanded));
-     answer.hidden = isExpanded; 
-  });
+        const isExpanded = $button.attr("aria-expanded") === "true";
+
+        $button.attr("aria-expanded", String(!isExpanded));
+
+        if (isExpanded) {
+            $answer.stop(true, true).slideUp(300, function() {
+                $(this).attr("hidden", true);
+            });
+        }
+        else {
+            $answer.removeAttr("hidden").hide().stop(true, true).slideDown(300);
+        }
+    });
 });
