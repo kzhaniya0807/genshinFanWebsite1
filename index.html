@@ -66,25 +66,27 @@
 
     <section class="js-demo-section" aria-labelledby="js-demo-title">
 
-        <!-- task 0 welcome mess -->
-        <div class="js-demo-card">
-            <h3>Welcome to Teyvat, Traveler!
-              Personalize your visit to GenshinHub.</h3>
+        <!-- welcome mess -->
+        <div class="traveler-welcome">
+    <h2>Welcome to Teyvat, Traveler!</h2>
 
-            <label for="traveler-name">Enter your Traveler name:</label>
-            <input
-                type="text"
-                id="traveler-name"
-                placeholder="e.g. Lumin"
-            >
+    <label for="traveler-name">
+        Enter your Traveler name:
+    </label>
 
-            <button type="button" id="welcome-button">
-                Welcome, Traveler!
-            </button>
+    <input
+        type="text"
+        id="traveler-name"
+        placeholder="Your name"
+    >
 
-            <p id="welcome-message" aria-live="polite">
-                
-            </p>
+    <button id="welcome-button" type="button">
+        Start Journey
+    </button>
+
+    <p id="welcome-message" aria-live="polite">
+        Welcome, Traveler!
+    </p>
         </div>
     </section>
 
@@ -609,5 +611,7 @@ $(document).ready(function() {
 });
 </script>
 <!-- Aelin -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-features.js"></script>
 </body>
 </html>

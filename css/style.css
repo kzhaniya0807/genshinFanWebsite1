@@ -1728,3 +1728,43 @@ body.light-theme #dendro:checked ~ .filter-section .filter-bar label[for="dendro
     color: #ffffff;
 }
 >>>>>>> 3d24f056c0def3ada6f3721e097bbe832fd6f8fb
+
+/* TASK 1: Traveler Welcome */
+
+.traveler-welcome {
+    text-align: center;
+    padding: 30px 20px;
+    margin: 30px auto;
+}
+
+.traveler-welcome input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ab2f54;
+    border-radius: 6px;
+    background-color: #112038;
+    color: white;
+}
+
+.traveler-welcome button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ab2f54;
+    color: white;
+    cursor: pointer;
+}
+
+.traveler-welcome button:hover {
+    opacity: 0.85;
+}
+
+#welcome-message {
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+#welcome-message.success {
+    color: #4caf82;
+}
