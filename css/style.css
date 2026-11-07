@@ -1972,3 +1972,47 @@ body.light-theme .char-filter-section .char-no-results {
     padding: 12px;
     border-radius: 6px;
 }
+
+/* Light Theme — Traveler Welcome Section */
+
+body.light-theme .js-demo-section {
+    background-color: #ffffff;
+    border: 1px solid #ab2f54;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* Section title */
+body.light-theme .traveler-welcome h2 {
+    color: #ab2f54;
+}
+
+/* Label */
+body.light-theme .traveler-welcome label {
+    color: #222222;
+}
+
+/* Input field */
+body.light-theme .traveler-welcome input {
+    background-color: #ffffff;
+    color: #222222;
+    border: 1px solid #222222;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+/* Placeholder */
+body.light-theme .traveler-welcome input::placeholder {
+    color: #777777;
+}
+
+/* Input focus */
+body.light-theme .traveler-welcome input:focus {
+    border-color: #ab2f54;
+    outline: 2px solid rgba(171, 47, 84, 0.15);
+}
+
+/* Welcome message */
+body.light-theme .traveler-welcome #welcome-message {
+    color: #333333;
+}
