@@ -1768,3 +1768,87 @@ body.light-theme #dendro:checked ~ .filter-section .filter-bar label[for="dendro
 #welcome-message.success {
     color: #4caf82;
 }
+
+/* FAQ home — Light Theme */
+body.light-theme .home-faq {
+    color: #1a1a1a;
+}
+
+body.light-theme .home-faq .js-faq-question {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border-color: #ffffff;
+}
+
+body.light-theme .home-faq .js-faq-answer {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.light-theme .home-faq .js-faq-answer p {
+    color: #333333;
+}
+
+
+/* Characters FAQ - Light Theme */
+
+body.light-theme .faq-section .faq-item summary {
+    color: #222222;
+}
+
+body.light-theme .faq-section .faq-item p {
+    color: #222222 !important;
+    background-color: transparent;
+}
+
+
+/* Favorites Section - Light Theme */
+
+body.light-theme #favorites-section .favorites-subtitle {
+    color: #333333 !important;
+}
+
+body.light-theme #favorites-section .favorites-count-text {
+    color: #333333 !important;
+}
+
+body.light-theme #favorites-section #favorite-count {
+    color: #222222 !important;
+}
+
+
+/* Guides FAQ - Light Theme */
+
+body.light-theme .guide-faq .faq-list details {
+    background-color: #ffffff;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Question */
+body.light-theme .guide-faq .faq-list details summary {
+    color: #222222 !important;
+    padding: 15px 18px;
+    cursor: pointer;
+}
+
+/* Answer */
+body.light-theme .guide-faq .faq-list details p {
+    color: #333333 !important;
+    padding: 0 18px 15px;
+    background-color: transparent;
+}
+
+/* Hover */
+body.light-theme .guide-faq .faq-list details summary:hover {
+    background-color: #eeeeee;
+    color: #ab2f54 !important;
+    border-radius: 8px;
+}
+
+/* Open question */
+body.light-theme .guide-faq .faq-list details[open] {
+    border-color: #ab2f54;
+}
