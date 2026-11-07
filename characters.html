@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Assyltas — jQuery before project scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/characters.js" defer></script>
+    <script src="js/theme.js" defer></script>
 </head>
 
 <body>
@@ -28,7 +33,7 @@
 </header>
 
 <main>
-    
+    <!-- OLD RADIO FILTER (Kept so it doesn't break other CSS) -->
     <input type="radio" name="element-filter" id="all" checked>
     <input type="radio" name="element-filter" id="pyro">
     <input type="radio" name="element-filter" id="hydro">
@@ -38,17 +43,11 @@
     <input type="radio" name="element-filter" id="geo">
     <input type="radio" name="element-filter" id="dendro">
 
-    <!-- SECTION 1 -->
+    <!-- SECTION 1 (Teammate's original filter section) -->
     <section class="filter-section">
         <h1>Teyvat Playable Characters</h1>
         <p>Filter characters by element or search for your favorite hero.</p>
-        <div class="search-box">
-            <label for="characterSearch">Search Characters:</label>
-            <input type="text" id="characterSearch" placeholder="Enter character name...">
 
-            <p id="resultCount">14 characters found</p>
-        </div>
-        
         <div class="filter-bar">
             <label for="all" class="filter-btn">All</label>
             <label for="pyro" class="filter-btn">Pyro</label>
@@ -61,9 +60,42 @@
         </div>
     </section>
 
+    <!-- Assyltas — Task 3: jQuery search + category filter -->
+    <section class="char-filter-section" aria-labelledby="char-filter-title">
+        <h2 id="char-filter-title">Find a Character</h2>
+
+        <div class="char-filter-controls">
+            <div class="form-group">
+                <label for="char-search">Search by name, weapon, or element</label>
+                <input type="search" id="char-search" class="form-control"
+                       placeholder="e.g. Arlecchino, sword, hydro…"
+                       autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label for="char-category">Category</label>
+                <select id="char-category" class="form-select">
+                    <option value="all">All elements</option>
+                    <option value="pyro">Pyro</option>
+                    <option value="hydro">Hydro</option>
+                    <option value="anemo">Anemo</option>
+                    <option value="electro">Electro</option>
+                    <option value="cryo">Cryo</option>
+                    <option value="geo">Geo</option>
+                    <option value="dendro">Dendro</option>
+                </select>
+            </div>
+        </div>
+
+        <p id="char-filter-count" class="char-filter-count" aria-live="polite">
+            Showing all 14 characters
+        </p>
+        <p id="char-no-results" class="char-no-results" hidden>No results found.</p>
+    </section>
+    <!-- Assyltas end Task 3 -->
+
     <!-- SECTION 2 -->
     <section class="character-display">
-        <p id="noResults" style="display: none;">No results found</p>
         <div class="character-grid">
 
             <!-- Card 1 -->
@@ -222,6 +254,32 @@
         </div>
     </section>
 
+    <!-- Assyltas — Task 4: Favourites list with delegated events -->
+    <section class="favourites-section" aria-labelledby="fav-title">
+        <h2 id="fav-title">My Favourite Characters</h2>
+
+        <form id="fav-form" class="fav-form" novalidate>
+            <div class="form-group">
+                <label for="fav-input">Add a character to your shortlist</label>
+                <input type="text" id="fav-input" class="form-control"
+                       placeholder="e.g. Furina" maxlength="50" autocomplete="off">
+                <p id="fav-error" class="fav-error" role="alert" hidden>
+                    Please enter a character name.
+                </p>
+            </div>
+            <button type="submit" class="btn">Add</button>
+        </form>
+
+        <p id="fav-count" class="fav-count" aria-live="polite">0 favourites</p>
+
+        <ul id="fav-list" class="fav-list"></ul>
+
+        <p id="fav-empty" class="fav-empty">
+            Your shortlist is empty. Add your first character above!
+        </p>
+    </section>
+    <!-- Assyltas end Task 4 -->
+
     <!-- SECTION 3 -->
     <section class="elemental-resonance">
         <h2>Elemental Synergy Tips</h2>
@@ -261,53 +319,11 @@
             <p>Elemental Reactions occur when you combine two or more elements on a single target, dealing extra damage or applying status effects like Freeze or Vaporize.</p>
         </details>
      </section>
-
-     <!-- Task 4: Create and remove elements -->
-      <section class="faq-section" id="favorites-section">
-        <h2>My Favorite Genshin Characters</h2>
-        <p class="favorites-subtitle">Select your favorite characters to add them to your personal wishlist.</p>
-        
-        <form id="favorite-form" class="favorite-form-box">
-            <div class="favorite-input-group">
-                <label for="favorite-select" class="visually-hidden"><strong>Character Name</strong></label>
-
-                <select id="favorite-select" class="form-control" required>
-                    <option value="" disabled selected>-- Choose a character --</option>
-                    <option value="Arlecchino">Arlecchino</option>
-                    <option value="Mavuika">Mavuika</option>
-                    <option value="Furina">Furina</option>
-                    <option value="Neuvillette">Neuvillette</option>
-                    <option value="Kazuha">Kazuha</option>
-                    <option value="Ifa">Ifa</option>
-                    <option value="Iansan">Iansan</option>
-                    <option value="Raiden Shogun">Raiden Shogun</option>
-                    <option value="Kaeya">Kaeya</option>
-                    <option value="Sandrone">Sandrone</option>
-                    <option value="Yun Jin">Yun Jin</option>
-                    <option value="Zhongli">Zhongli</option>
-                    <option value="Alhaitham">Alhaitham</option>
-                    <option value="Collei">Collei</option>
-                </select>
-                <button type="submit" class="favorite-add-btn">Add Character</button>
-            </div>
-        </form>
-
-        <p class="favorites-count-text">Total favorites: <span id="favorite-count">0</span></p>
-
-        <ul id="favorite-list" class="favorite-items-list">
-
-        </ul>
-      </section>
-
 </main>
 
 <footer class="main-footer">
     <p>&copy; 2026 Genshin Impact Fan Project. All Rights Reserved.</p>
-
 </footer>
 
-    <script src="js/fav_characters.js" defer></script>
-    <script src="js/characterSearch.js"></script>
-    <script src="js/theme.js"></script>
 </body>
 </html>

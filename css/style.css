@@ -1149,7 +1149,6 @@ body {
   display: none;
 }
 
-<<<<<<< HEAD
 /* Assyltas — Task 3 filter styles */
 .char-filter-section {
   margin-block: 2rem;
@@ -1264,7 +1263,7 @@ body {
   padding: 1rem;
 }
 .fav-empty[hidden] { display: none; }
-=======
+
 /* favorite characters section */
 #favorites-section {
     background-color: #112038;
@@ -1727,7 +1726,7 @@ body.light-theme #dendro:checked ~ .filter-section .filter-bar label[for="dendro
     background-color: #ab2f54;
     color: #ffffff;
 }
->>>>>>> 3d24f056c0def3ada6f3721e097bbe832fd6f8fb
+
 
 /* TASK 1: Traveler Welcome */
 
@@ -1851,4 +1850,125 @@ body.light-theme .guide-faq .faq-list details summary:hover {
 /* Open question */
 body.light-theme .guide-faq .faq-list details[open] {
     border-color: #ab2f54;
+}
+
+/* Registration Success Message - Light Theme */
+
+body.light-theme #message.success-message {
+    color: #218838;
+    background-color: #e8f5e9;
+    border: 1px solid #b7dfbd;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* Light Theme — Find a Character section */
+
+body.light-theme .char-filter-section {
+    background-color: #f4f4f6;
+    color: #222222;
+}
+
+body.light-theme .char-filter-section h2 {
+    color: #ab2f54;
+}
+
+body.light-theme .char-filter-section label {
+    color: #222222;
+}
+
+body.light-theme .char-filter-section input,
+body.light-theme .char-filter-section select {
+    background-color: #ffffff;
+    color: #222222;
+    border: 1px solid #cccccc;
+}
+
+body.light-theme .char-filter-section input::placeholder {
+    color: #777777;
+}
+
+body.light-theme .char-filter-section input:focus,
+body.light-theme .char-filter-section select:focus {
+    border-color: #ab2f54;
+    outline: 2px solid rgba(171, 47, 84, 0.15);
+}
+
+body.light-theme .char-filter-section .char-filter-count {
+    color: #444444;
+}
+
+body.light-theme .char-filter-section .char-no-results {
+    color: #ab2f54;
+}
+
+/* Light Theme — Favourite Characters */
+
+body.light-theme .favourites-section {
+    background-color: #fbfbff;
+    color: #222222;
+}
+
+body.light-theme .favourites-section h2 {
+    color: #ab2f54;
+}
+
+body.light-theme .favourites-section label {
+    color: #222222;
+}
+
+body.light-theme .favourites-section input {
+    background-color: #ffffff;
+    color: #222222;
+    border: 1px solid #fffcfc;
+}
+
+body.light-theme .favourites-section input::placeholder {
+    color: #777777;
+}
+
+body.light-theme .favourites-section input:focus {
+    border-color: #ab2f54;
+    outline: 2px solid rgba(171, 47, 84, 0.15);
+}
+
+body.light-theme .favourites-section .fav-count {
+    color: #333333;
+}
+
+body.light-theme .favourites-section .fav-empty {
+    color: #4e4e4e;
+}
+
+body.light-theme .favourites-section .fav-error {
+    color: #c62828;
+}
+
+body.light-theme .favourites-section .fav-list {
+    color: #222222;
+}
+
+body.light-theme .favourites-section .fav-list .fav-item {
+    background-color: #ffffff;
+    color: #222222;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+body.light-theme .favourites-section .fav-list .fav-remove {
+    background-color: #ab2f54;
+    color: #ffffff;
+}
+body.light-theme .favourites-section .fav-list .fav-item span {
+    color: #ab2f54 !important;
+}
+
+/* Light Theme — No Results Message */
+
+body.light-theme .char-filter-section .char-no-results {
+    color: #ab2f54;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 12px;
+    border-radius: 6px;
 }

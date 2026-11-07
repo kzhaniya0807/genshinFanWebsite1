@@ -1,29 +1,22 @@
+
 "use strict";
 
-// Task 0: Welcome
-const travelerName = document.getElementById("traveler-name");
-const welcomeMessage = document.getElementById("welcome-message");
-const welcomeButton = document.querySelector("#welcome-button");
+// Light/Dark Theme with localStorage
 
-if (travelerName && welcomeMessage && welcomeButton) {
-    welcomeButton.addEventListener("click", function () {
-        const name = travelerName.value.trim();
-
-        if (name === "") {
-            welcomeMessage.textContent =
-                "Please enter your Traveler name to begin your adventure!";
-        } else {
-            welcomeMessage.textContent =
-                "Welcome to Teyvat, " + name + "! Your adventure awaits!";
-        }
-    });
-}
-
-
-// Task 1: Light/Dark Theme
 document.addEventListener("DOMContentLoaded", function () {
+
     const themeButtons = document.querySelectorAll(".theme-toggle");
 
+    // Apply the saved theme when the page loads
+    const savedTheme = localStorage.getItem("genshin-theme");
+
+    if (savedTheme === "light") {
+        document.body.classList.add("light-theme");
+    } else {
+        document.body.classList.remove("light-theme");
+    }
+
+    // Update all theme buttons
     function updateThemeButtons() {
         const isLightTheme =
             document.body.classList.contains("light-theme");
@@ -40,9 +33,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Toggle theme and save the choice
     themeButtons.forEach(function (button) {
         button.addEventListener("click", function () {
+
             document.body.classList.toggle("light-theme");
+
+            const isLightTheme =
+                document.body.classList.contains("light-theme");
+
+            localStorage.setItem(
+                "genshin-theme",
+                isLightTheme ? "light" : "dark"
+            );
+
             updateThemeButtons();
         });
     });
